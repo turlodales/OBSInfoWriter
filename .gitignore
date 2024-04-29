@@ -20,6 +20,8 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+.deps/
+cmake/.CMakeBuildNumber
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -67,6 +69,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.VC.db
 
 # Chutzpah Test files
 _Chutzpah*

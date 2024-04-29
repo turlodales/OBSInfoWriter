@@ -10,6 +10,8 @@ For the original OBS-classic version, go to https://github.com/partouf/ObsInfoPl
 
 ## Installation
 
+Just use the installer...
+
 ### Windows
 - Place the 64bit **OBSInfoWriter.dll** in your \obs-studio\obs-plugins\64bit folder
 - Place the 32bit dll file in your \obs-studio\obs-plugins\32bit folder
@@ -26,7 +28,9 @@ For the original OBS-classic version, go to https://github.com/partouf/ObsInfoPl
 ## Configuration
 - Add the InfoWriter Source to 1 scene (the scene doesn't have to be always active).
 - Configure the Source and select the text file where you want the timestamps to be written to.
-  ![configure the source](http://i.imgur.com/wJ2E18M.png)
+  ![configure the source](sample_logfile.png)
+  Alternatively, you may sync both name and path with the video and specify automatic text file extension.
+  ![sync both name and path with the video](synced_name_and_path_with_the_video.png)
 - Set the hotkeys you want to use in File -> Settings -> Hotkeys
   ![set the hotkeys](http://i.imgur.com/53I2Je1.png)
 
@@ -55,6 +59,14 @@ Contributed by https://github.com/RetroGamer74
 ## Checkbox to log streaming events
       Allows turning on and off logging relating to streaming. Recommend to leave off if not streaming, and or not wanting to log timers relating to streaming.
 
+-----
 
+## Building
 
+You can quickly start working on this project by building it locally.
 
+First, you need to ensure to have necessary dependencies.
+OBSInfoWriter is dependent on OBS Studio project that can be found at https://github.com/obsproject/obs-studio
+You should have OBS Studio available locally.
+Necessary instruction is available at https://github.com/obsproject/obs-studio/wiki/Building-OBS-Studio but keep in mind that platform specific instructions are available on separate wiki pages.
+Other dependencies are downloaded automatically when generating the project using CMake.
